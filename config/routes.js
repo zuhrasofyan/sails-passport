@@ -32,9 +32,14 @@ module.exports.routes = {
   *                                                                          *
   ***************************************************************************/
 
-  '/': {
-    view: 'homepage'
-  }
+  // '/': {
+  //   view: 'homepage'
+  // }
+
+  //this is, combined with disabling blueprints will restrict access to the required action based on controller
+  'POST /auth/login': 'AuthController.login',
+  'GET /auth/validate_token' : 'AuthController.validate_token',
+  'POST /register' : 'UserController.register',
 
   /***************************************************************************
   *                                                                          *
