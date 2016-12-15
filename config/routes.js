@@ -40,6 +40,8 @@ module.exports.routes = {
   'POST /auth/login': 'AuthController.login',
   'GET /auth/validate_token' : 'AuthController.validate_token',
   'POST /register' : 'UserController.register',
+  'GET /quote/open' : 'QuoteController.getQuote',
+  'GET /quote/protected' : 'QuoteController.getProtectedQuote',
 
   /***************************************************************************
   *                                                                          *
