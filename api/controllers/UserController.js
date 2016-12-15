@@ -13,7 +13,7 @@ module.exports = {
             if (err) {
                 res.status(500).send({message: 'error'})
             } else if (result) {
-                res.send({message: 'user exist'})
+                res.status(400).send({message: 'user exist'})
             } else {
                 User.create({username:username, password:password}).exec(function (err, result){
                     if (err) {
