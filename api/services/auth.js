@@ -6,14 +6,14 @@ module.exports = {
     login: function (req, res) {
         passport.authenticate('local', function (err, user) {
             if (!user) {
-                res.send({
+                res.status(400).send({
                     success: false,
                     message: 'invalidLogin'
                 });
                 return;
             } else {
                 if (err) {
-                    res.send({
+                    res.status(400).send({
                         success: false,
                         message: 'unknownError',
                         error: err
@@ -35,13 +35,14 @@ module.exports = {
     isvalidtoken: function (req, res) {
         if (req.headers.authorization) {
             jwt.verify(req.headers.authorization.replace('Bearer ', ''), sails.config.secret, function (err, decoded) {
-                if (err) return res.send({success: false});
+                //418 = I'm a teapot!
+                if (err) return res.status(418).send({success: false, message: 'invalid'});
                 if (decoded) {
                     return res.send({success: true, user: decoded[0]});
                 }
             });
         } else {
-            return res.send({success: false});
+            return res.status(418).send({success: false, message: 'token invalid'});
         }
     }
 };
