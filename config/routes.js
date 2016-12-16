@@ -39,6 +39,7 @@ module.exports.routes = {
   //this is, combined with disabling blueprints will restrict access to the required action based on controller
   'POST /auth/login': 'AuthController.login',
   'GET /auth/validate_token' : 'AuthController.validate_token',
+  'GET /auth/logout': 'AuthController.logout',
   'POST /register' : 'UserController.register',
   'GET /quote/open' : 'QuoteController.getQuote',
   'GET /quote/protected' : 'QuoteController.getProtectedQuote',
