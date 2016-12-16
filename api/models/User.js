@@ -16,9 +16,22 @@ module.exports = {
         required: true,
         unique: true
     },
+    email: {
+        type: 'STRING',
+        required: true,
+        unique: true
+    },
     password: {
         type: 'STRING',
         required: true
+    },
+    isAdmin: {
+        type: 'BOOLEAN',
+        defaultsTo: false
+    },
+    isDeleted: {
+        type: 'BOOLEAN',
+        defaultsTo: false
     },
     toJSON: function () {
         var obj = this.toObject();
