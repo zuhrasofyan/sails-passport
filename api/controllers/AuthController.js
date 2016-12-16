@@ -20,6 +20,7 @@ module.exports = {
     logout: function(req, res){
         //req.logout is passportjs function to clear user information. see http://passportjs.org/docs
         req.logout();
+        req.session.destroy();
         res.send(200);
     }
 };
