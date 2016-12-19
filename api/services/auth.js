@@ -25,7 +25,7 @@ module.exports = {
                     req.session.cookie.token = token;
                     res.send({
                         success: true,
-                        user: user[0],
+                        user: {email:user[0].email, username:user[0].username },
                         token: token
                     });
                 }
@@ -38,7 +38,8 @@ module.exports = {
                 //418 = I'm a teapot!
                 if (err) return res.status(418).send({success: false, message: 'invalid'});
                 if (decoded) {
-                    return res.send({success: true, user: decoded[0]});
+                    console.log(decoded[0]);
+                    return res.send({success: true, user: decoded});
                 }
             });
         } else {
