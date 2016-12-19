@@ -1,8 +1,8 @@
 {
   "name": "sails-passport",
   "private": true,
-  "version": "0.0.0",
-  "description": "a Sails application",
+  "version": "0.0.1",
+  "description": "REST API boilerplate with sailsjs and authentification-ready application",
   "keywords": [],
   "dependencies": {
     "bcrypt": "^1.0.1",
