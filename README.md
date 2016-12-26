@@ -26,9 +26,10 @@ Boilerplate to generate quick pure RESTful API with sailsjs + MySQL + passport a
 * run `npm install`
 * run `sails lift`
 
-### ATTENTION! 
+### DISCLAIMER! 
 This is as minimal as it can be. Use it as your boilerplate to startup your REST API server, and as your playground to understand sailsjs concept + setup Passport authentification in server.
 For Accessing the functionality, you can use postman or better yet, download my other repo [angular-passport](https://github.com/zuhrasofyan/angular-passport).
+[MIT License](https://github.com/angular/angular.js/blob/master/LICENSE)
 
 Copyright 2016 &copy; Zuhra Sofyan
 
