@@ -44,6 +44,10 @@ module.exports.routes = {
   'GET /quote/open' : 'QuoteController.getQuote',
   'GET /quote/protected' : 'QuoteController.getProtectedQuote',
 
+  // this is the react-auth route
+  'GET /jokes/food' : 'Quote2Controller.getFoodJokes',
+  'GET /jokes/celebrity' : 'Quote2Controller.getCelebrityJokes',
+
   /***************************************************************************
   *                                                                          *
   * Custom routes here...                                                    *

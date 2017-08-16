@@ -27,8 +27,8 @@ module.exports.policies = {
   ***************************************************************************/
 
   //'*': true,
-  
-  
+
+
   //zuhra
   '*': "hasToken",
   UserController: {
@@ -40,6 +40,11 @@ module.exports.policies = {
   QuoteController: {
       getQuote: true,
       getProtectedQuote: "hasToken"
+  },
+
+  Quote2Controller: {
+    getFoodJokes: true,
+    getCelebrityJokes: true
   }
 
   /***************************************************************************
