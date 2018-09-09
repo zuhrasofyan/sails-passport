@@ -34,7 +34,7 @@ This is as minimal as it can be. Use it as your boilerplate to startup your REST
 For Accessing the functionality, you can use postman or better yet, download my other repo [angular-passport](https://github.com/zuhrasofyan/angular-passport).
 [MIT License](https://github.com/angular/angular.js/blob/master/LICENSE)
 
-Copyright &copy; 2016 Zuhra Sofyan
+Right to Copy @ 2016 Zuhra Sofyan
 
 
 
